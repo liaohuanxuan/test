@@ -26,9 +26,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-   implementation files('libs/AMap3DMap_7.8.0_AMapNavi_7.8.0_AMapSearch_7.7.0_20210104.jar')
-
-
-
+    implementation files('libs/AMap3DMap_7.8.0_AMapNavi_7.8.0_AMapSearch_7.7.0_20210104.jar')
 
 }
