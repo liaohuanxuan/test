@@ -34,9 +34,6 @@ import java.util.List;
 public class MainActivity extends Activity implements View.OnClickListener {
     MapView mMapView;
     AMap aMap;
-    private LatLng latLng;
-    private Button nbutton,mbutton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -63,13 +60,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         aMap.setMyLocationEnabled(true);// 设置为true表示启动显示定位蓝点，false表示隐藏定位蓝点并不进行定位，默认是false。
         aMap.moveCamera(CameraUpdateFactory.zoomTo(15));
 
-
-        nbutton=findViewById(R.id.nbutton);//找到控件
-        mbutton=findViewById(R.id.mbutton);
-        nbutton.setOnClickListener(this);
-        mbutton.setOnClickListener(this);
-        findViewById(R.id.button2).setOnClickListener(this);
-
+      //找到控件
+        findViewById(R.id.nbutton).setOnClickListener(this);
+        findViewById(R.id.mbutton).setOnClickListener(this);
+        findViewById(R.id.dhbutton).setOnClickListener(this);
+        findViewById(R.id.Search_button).setOnClickListener(this);
     }
 
     @Override
@@ -81,17 +76,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.mbutton:
                 aMap.setMapType(AMap.MAP_TYPE_SATELLITE);
                 break;
-            case R.id.button2:
+            case R.id.dhbutton:
+                clickNavigation();
+                break;
+            case R.id.Search_button:
                 clickBankPoint();
                 break;
 
-
         }
     }
-    private void clickBankPoint(){
-
-        startActivity(bankpoint.class);
-    }
+    private void clickBankPoint(){ startActivity(bankpoint.class); }
+    private void clickNavigation(){startActivity(navigation.class);}
     private void startActivity(Class<?> cl) {
         Intent intent = new Intent(this, cl);
         startActivity(intent);

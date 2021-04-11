@@ -47,14 +47,14 @@
             android:text="@string/dh" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/Search_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/search" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/Manage_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
