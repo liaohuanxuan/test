@@ -65,8 +65,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.mbutton).setOnClickListener(this);
         findViewById(R.id.dhbutton).setOnClickListener(this);
         findViewById(R.id.Search_button).setOnClickListener(this);
+        findViewById(R.id.Manage_button).setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v){
         switch (v.getId()){
@@ -91,7 +91,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Intent intent = new Intent(this, cl);
         startActivity(intent);
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();

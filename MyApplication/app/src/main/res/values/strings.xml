@@ -5,4 +5,12 @@
     <string name="dh">导航功能</string>
     <string name="search">搜索功能</string>
     <string name="management">管理功能</string>
+    <string name="infowindow_navigation">导航</string>
+    <string name="infowindow_call">电话</string>
+    <string name="agent_addr">地址：%1$s</string>
+
+    <string name="marker1">中国邮政储蓄银行</string>
+    <string name="marker2">中国银行</string>
+    <string name="marker3">中国建设银行</string>
+    <string name="marker4">湖南省农村信用社联合社</string>
 </resources>
